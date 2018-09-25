@@ -2,6 +2,7 @@
 
 const Hapi = require('hapi')
 const Hoek = require('hoek')
+const Routes = require('./lib/routes')
 const Settings = require('./settings')
 
 const server = new Hapi.Server({
@@ -9,13 +10,7 @@ const server = new Hapi.Server({
   port: Settings.port
 });
 
-server.route({
-  method: 'GET',
-  path: '/',
-  handler: (request, reply) => {
-    return 'Hello, Toshi!'
-  }
-})
+server.route(Routes)
 
 async function start() {
   try {

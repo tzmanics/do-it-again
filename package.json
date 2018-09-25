@@ -19,6 +19,9 @@
   "dependencies": {
     "dotenv": "^6.0.0",
     "hapi": "^17.5.4",
-    "hoek": "^5.0.4"
+    "hoek": "^5.0.4",
+    "moment": "^2.22.2",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.2"
   }
 }
